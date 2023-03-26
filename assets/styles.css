@@ -1,0 +1,42 @@
+:root {
+    --dark-blue: hsl(240, 100%, 5%);
+    --dark-grayish-blue: hsl(236, 13%, 42%);
+    --grayish-blue: hsl(233, 8%, 79%);
+    --off-white: hsl(36, 100%, 99%);
+    --orange: hsl(35, 77%, 62%);
+    --red: hsl(5, 85%, 63%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--dark-blue)
+}
+
+header, main {
+    width: 90%;
+    margin: 0 auto;   
+}
+
+header nav {
+    display: flex;
+    margin: 2rem auto;
+}
+header nav img:last-child {
+    margin-left: auto;
+}
+
+main img {
+    /* ask oli */
+    height: 100%;
+    width: 100%;
+}
+
+main section h1 {
+    font-weight: 800;
+}
