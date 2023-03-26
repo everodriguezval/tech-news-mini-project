@@ -24,14 +24,40 @@ header, main {
     margin: 0 auto;   
 }
 
+.navlinks {
+    list-style-type: none;
+}
+
+.navlinks.lg {
+    display: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
 header nav {
     display: flex;
+    align-items: center;
     margin: 2rem auto;
 }
-header nav img:last-child {
+
+.hamburger {
     margin-left: auto;
 }
 
+.sidebar {
+    position: absolute;
+    transform: translateX(-200%);
+    transition: transform 0.4s ease;
+    width: 200px;
+    top: 0;
+    bottom: 0;
+    background-color: white;
+    padding: 1rem 0 0 1rem;
+  }
+
+/* Home */
 main img {
     /* ask oli */
     height: 100%;
@@ -124,4 +150,31 @@ main article section h3 {
 .layout-article h2 {
     font-size: 2rem;
     color: var(--grayish-blue)
+}
+
+
+
+@media screen and (min-width: 750px) {
+    .navlinks.small {
+        display: none;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navlinks.lg {
+        display: flex;
+        
+    }
+
+    .navlinks.lg li {
+        margin: 0 1rem;
+    }
+
+    .list-wrapper {
+        margin-left: auto;
+    }
+
+
 }
